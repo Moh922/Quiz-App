@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="end.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Quiz Project</title>
+</head>
+
+<body>
+    <header>
+        <a href="highscores.html" id=leaderboard>View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
+        </i></a> 
+        <div class="timer">
+            <span>00:00</span>
+        </div>
+    </header>
+    <div class="container">
+        <div class="end-details">
+            <div class="text">
+                <h2>ALL DONE!</h2>
+            </div>
+            <div class="paragraph">
+                <p>Your final score is <span id="finalscore"> </span></p>
+            </div>
+            <div class="details">
+                <form action="#">
+                    <label for="username">Enter Initials:</label>
+                    <input type="text" id="username">
+                    <a><button type="submit" class="btn" id="saveScoreBtn" 
+                        onclick="savedHighScore(event)" disabled>Submit</button></a>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+   
+    <script src="end.js"></script>
+</body>
+
+</html>
